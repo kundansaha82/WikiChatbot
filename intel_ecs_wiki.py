@@ -68,10 +68,9 @@ def add_doc(es, indexname, title, link, heading, keywordoriginal):
 
 class EcsWiki(scrapy.Spider):
     name='ecs_wiki_mod'
-    url1='https://wiki.ith.intel.com/display/ladtechtme/Ethernet+Customer+Solutions+SW+AE+Wiki'
-    url1 = 'https://wiki.ith.intel.com/display/NDPerformance/DPDK+performance+on+Columbiaville'
+    url1='StartPageofWiki'
     indexname='wikifinal'
-    allowed_domains = ["wiki.ith.intel.com"]
+    allowed_domains = ["subdomain.domain.TLD"]
 
     
     """def __init__(self, *args, **kwargs):
